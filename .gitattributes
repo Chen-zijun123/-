@@ -1,3 +1,6 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+陈子君的20岁vlog.mp4 filter=lfs diff=lfs merge=lfs -text
+和朋友跨小年vlog.mp4 filter=lfs diff=lfs merge=lfs -text
+生活在树上vlog.mp4 filter=lfs diff=lfs merge=lfs -text
 *.mp4 filter=lfs diff=lfs merge=lfs -text
