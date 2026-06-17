@@ -22,4 +22,10 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
-public/videos/
+# 仅排除超过25MB的大视频文件（Cloudflare限制）
+public/videos/Vlog/陈子君的20岁vlog.mp4
+public/videos/Vlog/和朋友跨小年vlog.mp4
+public/videos/Vlog/生活在树上vlog.mp4
+public/videos/Vlog/陈子君的独居vlog.mp4
+public/videos/Vlog/时间的意义vlog.mp4
+public/videos/音乐/《梦中的婚礼》.mp4
