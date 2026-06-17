@@ -44,7 +44,7 @@ const CATEGORIES = [
   },
 ]
 
-const fadeInUp = {
+const VIDEO_BASE = 'https://github.com/Chen-zijun123/-/releases/download/v1.0'
   initial: { opacity: 0, y: 30 },
   whileInView: { opacity: 1, y: 0 },
   viewport: { once: true, margin: '-60px' },
@@ -64,7 +64,7 @@ function VideoCard({ src, index, category }) {
       {/* 视频播放区 */}
       <div className="relative aspect-video bg-black">
         <video
-          src={`/videos/${category}/${encodeURIComponent(src)}`}
+          src={`${VIDEO_BASE}/${encodeURIComponent(src)}`}
           className="w-full h-full"
           preload="metadata"
           controls
