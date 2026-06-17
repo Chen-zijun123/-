@@ -68,17 +68,19 @@ export default function Hero() {
             CREATIVE DEVELOPER
           </p>
 
-          {/* 大标题 */}
-          <h1 className="text-5xl lg:text-7xl xl:text-8xl font-light tracking-wider text-text-primary mb-6 leading-tight">
-            Hi，这里是
-            <span className="block mt-3 bg-gradient-to-r from-text-primary via-text-primary to-accent/70 bg-clip-text text-transparent font-serif">
+          {/* 大标题 — 艺术手写字体 */}
+          <h1 className="text-text-primary mb-6 leading-tight">
+            <span className="block text-3xl lg:text-4xl xl:text-5xl font-light tracking-[0.08em]" style={{ fontFamily: '"Caveat", cursive' }}>
+              Hi，这里是
+            </span>
+            <span className="block mt-3 text-text-primary text-6xl lg:text-8xl xl:text-9xl" style={{ fontFamily: '"Zhi Mang Xing", "Ma Shan Zheng", cursive' }}>
               陈子君
             </span>
           </h1>
 
           {/* 副标题 */}
           <p className="text-lg lg:text-xl text-text-secondary font-light tracking-wide max-w-xl mx-auto mb-12 leading-relaxed">
-            用镜头与设计，记录生活的每一种可能
+            飘飘何所似，天地一沙鸥
           </p>
 
           {/* CTA 按钮组 */}
@@ -91,17 +93,6 @@ export default function Hero() {
                 探索作品
               </span>
             </button>
-
-            <a
-              href="#footer"
-              onClick={(e) => {
-                e.preventDefault()
-                document.querySelector('#footer')?.scrollIntoView({ behavior: 'smooth' })
-              }}
-              className="text-sm tracking-[0.2em] text-text-secondary hover:text-accent transition-colors duration-300 border-b border-transparent hover:border-accent"
-            >
-              联系我
-            </a>
           </div>
         </motion.div>
       </div>

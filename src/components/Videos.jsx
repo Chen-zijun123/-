@@ -8,12 +8,12 @@ const CATEGORIES = [
     label: 'Vlog',
     subtitle: '生活记录',
     videos: [
-      '南昌行vlog.mp4',
-      '和朋友跨小年vlog.mp4',
-      '时间的意义vlog.mp4',
-      '生活在树上vlog.mp4',
       '陈子君的20岁vlog.mp4',
       '陈子君的独居vlog.mp4',
+      '和朋友跨小年vlog.mp4',
+      '生活在树上vlog.mp4',
+      '南昌行vlog.mp4',
+      '时间的意义vlog.mp4',
     ],
   },
   {
@@ -99,7 +99,7 @@ export default function Videos() {
           </p>
           <h2 className="section-title">视频作品</h2>
           <p className="section-subtitle max-w-2xl">
-            用动态影像记录每一次灵感与故事
+            我留不住时间，于是记录
           </p>
         </motion.div>
 

@@ -18,6 +18,7 @@ export default {
       fontFamily: {
         sans: ['"Inter"', '"Noto Sans SC"', 'system-ui', '-apple-system', 'sans-serif'],
         serif: ['"Playfair Display"', '"Noto Serif SC"', 'Georgia', 'serif'],
+        artistic: ['"Ma Shan Zheng"', '"Caveat"', 'cursive'],
         mono: ['"JetBrains Mono"', '"Fira Code"', 'monospace'],
       },
       maxWidth: {

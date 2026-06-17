@@ -34,7 +34,7 @@ export default function Life() {
           </p>
           <h2 className="section-title">生活瞬间</h2>
           <p className="section-subtitle max-w-2xl">
-            镜头下的碎片时光，记录那些值得被记住的瞬间。
+            有一种浪漫的爱是浪费时间——林宥嘉《兜圈》
           </p>
         </motion.div>
 

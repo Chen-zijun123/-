@@ -42,8 +42,7 @@ export default function Works() {
           </p>
           <h2 className="section-title">我的作品</h2>
           <p className="section-subtitle max-w-2xl">
-            每一个项目都是一次探索的旅程。专注于创造具有持久价值的作品，
-            在细节中追求极致，在简约中传递力量。
+            欢迎你来读我的作品，希望我们的灵魂能共鸣
           </p>
         </motion.div>
 
@@ -63,7 +62,7 @@ export default function Works() {
               关于我
             </h3>
             <p className="text-text-secondary leading-relaxed text-sm lg:text-base max-w-3xl">
-              我是一名热爱创意与技术的创作者，热爱探索生活中一切浪漫的事物，并通过技术实现脑海里天马行空的想法。这里展示了我近期的部分作品，希望它们能传递出我的审美与态度。
+              你好呀，这里是陈子君，一名不可救药的浪漫主义患者，喜欢雨季，凉爽的天气，和安静的咖啡店。如果有幸在同一座城市，我会期待和你冥冥之中的相遇。也许某个转角，你路过我，而雨刚好停。
             </p>
             <div className="flex gap-6 mt-6 text-xs tracking-[0.2em] text-text-secondary">
               <span>设计</span>

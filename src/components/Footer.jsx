@@ -19,12 +19,10 @@ export default function Footer() {
             GET IN TOUCH
           </p>
           <h2 className="text-3xl lg:text-4xl font-light tracking-wider text-text-primary mb-6">
-            开始一段对话
+            欢迎你来见证我
           </h2>
           <p className="text-text-secondary font-light leading-relaxed mb-12">
-            如果你对我的作品感兴趣，或者有任何合作想法，
-            <br className="hidden lg:block" />
-            欢迎随时联系。期待与你交流。
+            祝我们，永远少年
           </p>
 
           {/* 联系方式 */}
