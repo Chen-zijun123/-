@@ -10,13 +10,13 @@ const CATEGORIES = [
     subtitle: '生活记录',
     videos: [
       { name: '南昌行vlog', file: 'Vlog/南昌行vlog.mp4' },
+      { name: '陈子君的独居vlog', file: 'Vlog/陈子君的独居vlog.mp4' },
+      { name: '时间的意义vlog', file: 'Vlog/时间的意义vlog.mp4' },
     ],
     largeVideos: [
       { name: '陈子君的20岁vlog', bvid: 'BV18dLX66EAu' },
-      { name: '陈子君的独居vlog', url: '' },
       { name: '和朋友跨小年vlog', bvid: 'BV1y46sBGE5F' },
       { name: '生活在树上vlog', bvid: 'BV1SdLX6zEwJ' },
-      { name: '时间的意义vlog', url: '' },
     ],
   },
   {
@@ -42,9 +42,7 @@ const CATEGORIES = [
       { name: '《Una Mattina》', file: '音乐/《Una Mattina》.mp4' },
       { name: '《告白气球》前奏', file: '音乐/《告白气球》前奏.mp4' },
       { name: '《江南》', file: '音乐/《江南》.mp4' },
-    ],
-    largeVideos: [
-      { name: '《梦中的婚礼》', url: '' },
+      { name: '《梦中的婚礼》', file: '音乐/《梦中的婚礼》.mp4' },
     ],
   },
 ]
