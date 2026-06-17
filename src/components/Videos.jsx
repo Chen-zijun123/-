@@ -13,10 +13,10 @@ const CATEGORIES = [
     ],
     largeVideos: [
       { name: '陈子君的20岁vlog', bvid: 'BV18dLX66EAu' },
-      { name: '陈子君的独居vlog', url: '' },
+      { name: '陈子君的独居vlog', bvid: 'BV1u5LX6BESt' },
       { name: '和朋友跨小年vlog', bvid: 'BV1y46sBGE5F' },
       { name: '生活在树上vlog', bvid: 'BV1SdLX6zEwJ' },
-      { name: '时间的意义vlog', url: '' },
+      { name: '时间的意义vlog', bvid: 'BV1g5LX6BEMU' },
     ],
   },
   {
@@ -44,7 +44,7 @@ const CATEGORIES = [
       { name: '《江南》', file: '音乐/《江南》.mp4' },
     ],
     largeVideos: [
-      { name: '《梦中的婚礼》', url: '' },
+      { name: '《梦中的婚礼》', bvid: 'BV12JLX6PE2m' },
     ],
   },
 ]
