@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { FiPlay } from 'react-icons/fi'
 
-// 每个视频可以是字符串（本地文件路径）或 { name, url } 对象（外部链接）
+// 每个视频可以是 { name, file }（本地文件）或 { name, bvid }（B站视频）
 const CATEGORIES = [
   {
     key: 'Vlog',
@@ -12,10 +12,10 @@ const CATEGORIES = [
       { name: '南昌行vlog', file: 'Vlog/南昌行vlog.mp4' },
     ],
     largeVideos: [
-      { name: '陈子君的20岁vlog', url: '' },
+      { name: '陈子君的20岁vlog', bvid: 'BV18dLX66EAu' },
       { name: '陈子君的独居vlog', url: '' },
-      { name: '和朋友跨小年vlog', url: '' },
-      { name: '生活在树上vlog', url: '' },
+      { name: '和朋友跨小年vlog', bvid: 'BV1y46sBGE5F' },
+      { name: '生活在树上vlog', bvid: 'BV1SdLX6zEwJ' },
       { name: '时间的意义vlog', url: '' },
     ],
   },
@@ -58,7 +58,37 @@ const fadeInUp = {
 
 function VideoCard({ src, index }) {
   const displayName = src.name || src.file?.replace(/\.mp4$/i, '') || ''
-  // 本地文件用 /videos/ 路径，外部链接直接用 url
+
+  // B站视频：使用 iframe 嵌入
+  if (src.bvid) {
+    const embedUrl = `//player.bilibili.com/player.html?bvid=${src.bvid}&page=1&high_quality=1`
+    return (
+      <motion.div
+        {...fadeInUp}
+        transition={{ ...fadeInUp.transition, delay: 0.08 * index }}
+        className="card group"
+      >
+        <div className="relative aspect-video bg-black">
+          <iframe
+            src={embedUrl}
+            className="w-full h-full"
+            allowFullScreen
+            scrolling="no"
+            frameBorder="0"
+            sandbox="allow-scripts allow-same-origin allow-popups allow-presentation"
+          />
+        </div>
+        <div className="p-4 flex items-center gap-3">
+          <FiPlay size={14} className="text-accent/60 flex-shrink-0" />
+          <span className="text-sm text-text-secondary font-light tracking-wider truncate">
+            {displayName}
+          </span>
+        </div>
+      </motion.div>
+    )
+  }
+
+  // 本地文件用 /videos/ 路径
   const videoSrc = src.file ? `/videos/${encodeURIComponent(src.file)}` : (src.url || '')
 
   return (
